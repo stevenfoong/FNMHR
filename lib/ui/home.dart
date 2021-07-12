@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 //Config location
 import 'package:fnm_hr/config/constant.dart';
 
-import 'package:fnm_hr/ui/screen/login_screen.dart';
+import 'package:fnm_hr/ui/splash_screen.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays(
-      [SystemUiOverlay.bottom, SystemUiOverlay.top]);
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class HomePage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -31,8 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      //home: MyHomePage(title: APP_NAME),
-      home: LoginPage(),
+      home: MyHomePage(title: APP_NAME),
     );
   }
 }
