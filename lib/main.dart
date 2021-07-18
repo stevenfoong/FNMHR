@@ -1,38 +1,79 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 //Config location
 import 'package:fnm_hr/config/constant.dart';
 
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:fnm_hr/ui/screen/login_screen.dart';
+import 'package:fnm_hr/ui/screen/fetch_data.dart';
+
+import 'package:fnm_hr/ui/screen/fetch_data_orig.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIOverlays(
       [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  //runApp(Fetchdata());
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class CheckAuth extends StatefulWidget {
+  @override
+  _CheckAuthState createState() => _CheckAuthState();
+}
+
+class _CheckAuthState extends State<CheckAuth> {
+  bool isAuth = false;
+  //bool isAuth = true;
+
+  @override
+  void initState() {
+    _checkIfLoggedIn();
+    super.initState();
+  }
+
+  void _checkIfLoggedIn() async{
+    SharedPreferences localStorage = await SharedPreferences.getInstance();
+    var token = localStorage.getString('token');
+    if(token != null){
+      setState(() {
+        isAuth = true;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Widget child;
+    if (isAuth) {
+      child = MyHomePage(title: APP_NAME);
+    } else {
+      child = LoginPage();
+      //child = MyApp();
+    }
+    return Scaffold(
+      body: child,
+    );
+  }
+
+}
+
+class MyApp2 extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: WEB_TITLE,
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: APP_NAME),
-      home: LoginPage(),
+      // home: LoginPage(),
+      home: CheckAuth(),
     );
   }
 }

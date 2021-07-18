@@ -19,3 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 Packages Used:
 
 https://pub.dev/packages/flutter_native_splash
+https://pub.dev/packages/shared_preferences/versions/2.0.0-nullsafety

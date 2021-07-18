@@ -10,9 +10,9 @@ const String ORG_NAME ='Organization Name';
 
 
 
-const String APP_DOMAIN = '';
+const String APP_DOMAIN = 'devkit.ijteknologi.com';
 
-const String LOGIN_API = "https://" + APP_DOMAIN + "/authentication/login";
+const String LOGIN_API = "https://" + APP_DOMAIN + "/api/authentication/login";
 const String PRODUCT_API = "https://" + APP_DOMAIN + "/example/getProduct";
 
 // color for apps
