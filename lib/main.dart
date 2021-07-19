@@ -9,6 +9,7 @@ import 'package:fnm_hr/config/constant.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:fnm_hr/ui/screen/login_screen.dart';
+//import 'package:fnm_hr/ui/screen/login_screen_orig.dart';
 import 'package:fnm_hr/ui/screen/fetch_data.dart';
 
 import 'package:fnm_hr/ui/screen/fetch_data_orig.dart';
@@ -18,7 +19,7 @@ void main() {
   SystemChrome.setEnabledSystemUIOverlays(
       [SystemUiOverlay.bottom, SystemUiOverlay.top]);
   //runApp(Fetchdata());
-  runApp(MyApp());
+  runApp(MyApp2());
 }
 
 class CheckAuth extends StatefulWidget {
@@ -52,7 +53,7 @@ class _CheckAuthState extends State<CheckAuth> {
     if (isAuth) {
       child = MyHomePage(title: APP_NAME);
     } else {
-      child = LoginPage();
+      child = SignInHttpDemo();
       //child = MyApp();
     }
     return Scaffold(
@@ -61,6 +62,7 @@ class _CheckAuthState extends State<CheckAuth> {
   }
 
 }
+
 
 class MyApp2 extends StatelessWidget {
   // This widget is the root of your application.
@@ -74,8 +76,11 @@ class MyApp2 extends StatelessWidget {
       //home: MyHomePage(title: APP_NAME),
       // home: LoginPage(),
       home: CheckAuth(),
+
+      //home: _decideMainPage(),
     );
   }
+
 }
 
 class MyHomePage extends StatefulWidget {
@@ -99,7 +104,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  void _incrementCounter() async {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -108,6 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+    final prefs = await SharedPreferences.getInstance();
+    prefs.remove('token');
   }
 
   @override
@@ -154,11 +161,12 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2b842cc4-3110-4a77-b7cf-2cf7f0b7a27c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,30 +61,54 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="617" y="218" key="#Inspections" timestamp="1626078341770">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="617" y="218" key="#Inspections/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626078341770" />
-    <state width="1798" height="197" key="GridCell.Tab.0.bottom" timestamp="1626548618708">
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626625341488">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1798" height="197" key="GridCell.Tab.0.bottom/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626548618708" />
-    <state width="1798" height="197" key="GridCell.Tab.0.center" timestamp="1626548618708">
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626625341488" />
+    <state width="1798" height="197" key="GridCell.Tab.0.bottom" timestamp="1626674915376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1798" height="197" key="GridCell.Tab.0.center/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626548618708" />
-    <state width="1798" height="197" key="GridCell.Tab.0.left" timestamp="1626548618708">
+    <state width="1798" height="197" key="GridCell.Tab.0.bottom/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626674915376" />
+    <state width="1798" height="197" key="GridCell.Tab.0.center" timestamp="1626674915376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1798" height="197" key="GridCell.Tab.0.left/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626548618708" />
-    <state width="1798" height="197" key="GridCell.Tab.0.right" timestamp="1626548618708">
+    <state width="1798" height="197" key="GridCell.Tab.0.center/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626674915376" />
+    <state width="1798" height="197" key="GridCell.Tab.0.left" timestamp="1626674915376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1798" height="197" key="GridCell.Tab.0.right/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626548618708" />
+    <state width="1798" height="197" key="GridCell.Tab.0.left/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626674915376" />
+    <state width="1798" height="197" key="GridCell.Tab.0.right" timestamp="1626674915376">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1798" height="197" key="GridCell.Tab.0.right/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626674915376" />
     <state x="712" y="285" width="540" height="524" key="StructurePopup" timestamp="1626078137797">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="712" y="285" width="540" height="524" key="StructurePopup/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626078137797" />
+    <state x="640" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1626685083822">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="640" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626685083822" />
+    <state x="647" y="252" key="run.anything.popup" timestamp="1626675925233">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="252" key="run.anything.popup/-1866.-1080.1858.1080/-1600.0.1600.900/-8.-771.1024.768/62.0.1858.1080@62.0.1858.1080" timestamp="1626675925233" />
   </component>
 </project>

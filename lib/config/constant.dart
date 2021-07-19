@@ -13,6 +13,7 @@ const String ORG_NAME ='Organization Name';
 const String APP_DOMAIN = 'devkit.ijteknologi.com';
 
 const String LOGIN_API = "https://" + APP_DOMAIN + "/api/authentication/login";
+const String LOGIN_API2 = "https://" + APP_DOMAIN + "/api2/authentication/login";
 const String PRODUCT_API = "https://" + APP_DOMAIN + "/example/getProduct";
 
 // color for apps
